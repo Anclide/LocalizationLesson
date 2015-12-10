@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Localization
+
+  Created by Victor on 10.12.15.
+  Copyright © 2015 Victor Bogatyrev. All rights reserved.
+*/
+
+
+"BookName" = "Бомбоустойчивость вашей лошади";
+"Image" = "rus.png";
+"Author" = "Рик Пеликано";
+"AuthorLabel" = "Автор:";
+"Edition" = "1000";
+"EditionLabel" = "Тираж:";
+"Date" = "01.01.2004";
+"DateLabel" = "Дата:";
+"Rating" = "2.5";
+"RatingLabel" = "Рейтинг:";
+"Description" = "Мне было лень переводить описание, а гугОл делает это очень отвратно, так что вот так вот. З.Ы. Кек)";
+

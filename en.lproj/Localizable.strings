@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Localization
+
+  Created by Victor on 10.12.15.
+  Copyright © 2015 Victor Bogatyrev. All rights reserved.
+*/
+
+
+"BookName" = "Bombproof Your Horse";
+"Image" = "eng.jpg";
+"Author" = "Rick Pelicano";
+"AuthorLabel" = "Author:";
+"EditionLabel" = "Edition(count):";
+"DateLabel" = "Date:";
+"RatingLabel" = "Rating:";
+"Edition" = "150000";
+"Date" = "01/01/2004";
+"Rating" = "4.3";
+"Description" = "Every horse, from the pampered show-hunter to the family pet, is faced at one time or another with an object or situation that is overwhelmingly terrifying, or just downright confusing. With his systematic approach to 'bombproofing', Sergeant Rick Pelicano of the Maryland National Capitol Park Police shares his methods on how to be proactive rather than reactive when it comes to training your horse to deal with such situations. His vividly illustrated manual shows you how to accustom your horse to a variety of circumstances, noises, and objects, thereby turning him into a more pleasurable, submissive, confident, and ultimately safer mount.";
