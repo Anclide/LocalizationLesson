@@ -60,8 +60,8 @@
 		ABF5084C1C19FFC900B5FAC4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		ABF508611C1A0EC100B5FAC4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ABF508631C1A0EC500B5FAC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		ABF508641C1A1A9F00B5FAC4 /* eng.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = eng.jpg; path = ../../../../Downloads/eng.jpg; sourceTree = "<group>"; };
-		ABF508651C1A1A9F00B5FAC4 /* rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rus.png; path = ../../../../Downloads/rus.png; sourceTree = "<group>"; };
+		ABF508641C1A1A9F00B5FAC4 /* eng.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eng.jpg; sourceTree = "<group>"; };
+		ABF508651C1A1A9F00B5FAC4 /* rus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rus.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
