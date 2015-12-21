@@ -7,8 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "FormatController.h"
+#import "BookModel.h"
 
 @interface ViewController ()
+{
+    UIImage *image;
+    NSNumber *edition;
+    NSDecimalNumber *bookRating;
+    NSDate *bookDate;
+    BookModel *book;
+}
 
 @end
 
@@ -16,24 +25,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.bookNameLabel.text = NSLocalizedString(@"BookName", nil);
-    self.authorName.text = NSLocalizedString(@"Author", nil);
-    self.authorNameLabel.text = NSLocalizedString(@"AuthorLabel", nil);
-    // не особо понял, как тираж и рейтинг должны быть не строковыми переменными, если в модели хранятся как раз в этом формате
-    self.regionCount.text = NSLocalizedString(@"Edition", nil);
-    self.regionCountLabel.text = NSLocalizedString(@"EditionLabel", nil);
-    self.date.text = NSLocalizedString(@"Date", nil);
-    self.dateLabel.text = NSLocalizedString(@"DateLabel", nil);
-    self.rating.text = NSLocalizedString(@"Rating", nil);
-    self.ratingLabel.text = NSLocalizedString(@"RatingLabel", nil);
-    self.bookDescription.text = NSLocalizedString(@"Description", nil);
-    self.countryImage.image = [UIImage imageNamed:NSLocalizedString(@"Image", nil)];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self loadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)loadData {
+    [self setData];
+    book = [[BookModel alloc] initWithBookName:NSLocalizedString(@"BookName", nil)
+                                        author:NSLocalizedString(@"Author", nil)
+                                       edition:edition
+                                          date:bookDate
+                                        rating:bookRating
+                                         image:image
+                                andDescription:NSLocalizedString(@"Description", nil)];
+    
+    self.bookNameLabel.text = book.bookName;
+    self.authorNameLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"AuthorLabel", nil), book.author];
+    self.regionCountLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"EditionLabel", nil), book.edition];
+    self.dateLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"DateLabel", nil), [[FormatController dateFormatter] stringFromDate:book.date]];
+    self.ratingLabel.text = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"RatingLabel", nil), [[FormatController decimalNumberFormatter] stringFromNumber:book.rating]];
+    self.bookDescription.text = book.bookDescription;
+    self.countryImage.image = book.image;
+}
+
+- (void)setData {
+    image = [UIImage imageNamed:NSLocalizedString(@"Image", nil)];
+    bookDate = [NSDate date];
+    bookRating = [[NSDecimalNumber alloc] initWithString:NSLocalizedString(@"Rating", nil) locale:[NSLocale currentLocale]];
+    edition = [FormatController stringToNumber:NSLocalizedString(@"Edition", nil)];
 }
 
 @end

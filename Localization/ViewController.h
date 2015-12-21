@@ -11,15 +11,11 @@
 @interface ViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UILabel *bookNameLabel;
-@property (nonatomic, weak) IBOutlet UILabel *authorName;
 @property (nonatomic, weak) IBOutlet UILabel *authorNameLabel;
-@property (nonatomic, weak) IBOutlet UILabel *regionCount;
 @property (nonatomic, weak) IBOutlet UILabel *regionCountLabel;
-@property (nonatomic, weak) IBOutlet UILabel *date;
 @property (nonatomic, weak) IBOutlet UILabel *dateLabel;
 @property (nonatomic, weak) IBOutlet UIImageView *countryImage;
 @property (nonatomic, weak) IBOutlet UITextView *bookDescription;
-@property (nonatomic, weak) IBOutlet UILabel *rating;
 @property (nonatomic, weak) IBOutlet UILabel *ratingLabel;
 
 @end
